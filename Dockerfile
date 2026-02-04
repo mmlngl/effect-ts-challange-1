@@ -9,5 +9,3 @@ RUN curl -fsSL https://deb.nodesource.com/setup_20.x | bash - \
 WORKDIR /app
 
 RUN git clone https://github.com/mmlngl/effect-ts-challange-1.git .
-
-COPY . .
