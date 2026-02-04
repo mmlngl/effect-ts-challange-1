@@ -9,5 +9,5 @@ export const TimeGroup = P.HttpApiBuilder.group(
   (handlers) =>
     handlers.handle("getTime", () => Effect.gen(function* () {
       const now = yield* DateTime.now.pipe(Effect.andThen(d => DateTime.formatIso(d)));
-      return P.HttpServerResponse.text(now)
+      return now
     })))
